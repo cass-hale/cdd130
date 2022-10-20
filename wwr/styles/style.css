@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Roboto+Slab:wght@200&display=swap');
 div {
     max-width: 1600px;
 }
@@ -9,7 +10,15 @@ div {
 }
 
 body{
-    background-color: #eaac8b
+    background-color: #eaac8b;
+    font-family: 'Chakra Petch', serif, Helvetica;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header{
@@ -21,6 +30,7 @@ nav a {
     background-color: #6d597a;
     color: #eaac8b;
     text-decoration:none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -30,6 +40,9 @@ nav a:hover {
 
 .home-title {
     color: #355070;
+    font-family: 'Roboto Slab', 'Times New Roman', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -44,10 +57,18 @@ h4 {
     text-align: center;
 }
 
+.card-img {
+    border: 10px solid #b56576;
+}
+
 .book, .join {
     background-color: #b56576;
     color: #355070;
     text-decoration:none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -56,15 +77,22 @@ h4 {
 }
 
 .msg h2 {
-    color:#eaac8b
+    color:#eaac8b;
+    font-family: 'Roboto Slab', 'Times New Roman', sans-serif;
 }
 
 .msg p {
-    color:bisque
+    color:bisque;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 main section {
     text-align: center
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 #background {
@@ -75,10 +103,18 @@ main section {
 .msg {
     background-color: #355070;
     color:bisque;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #b56576;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 footer a {
@@ -97,6 +133,7 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -105,4 +142,12 @@ footer a:hover {
 
 img {
     width: 400px
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
