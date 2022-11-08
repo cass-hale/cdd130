@@ -9,6 +9,10 @@ div {
     margin-right: auto;
 }
 
+.logo {
+    width: 80px;
+}
+
 body{
     background-color: #eaac8b;
     font-family: 'Chakra Petch', serif, Helvetica;
@@ -22,7 +26,14 @@ h2 {
 }
 
 header{
-    background-color:#6D597A
+    background-color:#6D597A;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -39,7 +50,7 @@ nav a:hover {
 }
 
 .home-title {
-    color: #355070;
+    color: whitesmoke;
     font-family: 'Roboto Slab', 'Times New Roman', sans-serif;
     font-size: 2em;
     margin-top: 10px;
@@ -49,8 +60,22 @@ h4 {
     color:#355070;
 }
 
+section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 #hero-msg h1, hero-msg h4 {
     text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
 }
 
 .button-box {
@@ -88,7 +113,7 @@ h4 {
 }
 
 main section {
-    text-align: center
+    text-align: center;
 }
 
 main section img {
@@ -98,6 +123,8 @@ main section img {
 #background {
     height: 725px;
     background-color: #b56576;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 .msg {
@@ -105,16 +132,22 @@ main section img {
     color:bisque;
     line-height: 1.5em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
 }
 
 footer {
     background-color: #b56576;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer .social img {
     padding-top: 15px;
+    
 }
 
 footer a {
@@ -146,8 +179,52 @@ img {
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
 }
